@@ -1,0 +1,38 @@
+Polymorphism
+
+Q1:What does the word 'polymorphism' mean?
+A: poly = a lot
+   morphi = form
+It means we have a lot of forms of something.
+
+
+Q2:What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+A: We can apply polymorphism when we have a main instance class that we want to break down to different classes of similar functionality.
+For example, a Person class can have subclasses of Professor, Lecturer, Student.
+
+Q3:What can we use to implement polymorphism in Java?
+A: Inheritance, Composition
+
+Q4:How many 'forms' can an object take when using polymorphism?
+A: One class can only extend to one super class.
+
+Q5:Give an example of when you could use polymorphism.
+A: For example, a Person class can be subclassed to Professor, Lecturer, Researcher, Student because a Person has a name, age, can speak etc., and maybe for academia specifically we want the knowledge level or degree.
+A Professor only can  have a rank. We can break down a Professor even further to AdjunctProfessor, AssistantProfessor, AssociateProfessor and FullProfessor.
+A Lecturer only can have teaching Hours.
+A Researcher only can have articles published.
+
+
+Composition
+Q1:What do we mean by 'composition' in reference to object-oriented programming?
+A: When a class can reference another class and use its method(s) but not in a strict way, i.e any changes to the main class will not break the class that references to its methods.
+
+Q2:When would you use composition? Provide a simple example in Java.
+A: We would use composition for a Hotel that has Rooms.
+
+Q3:What is/are the advantage(s) of using composition?
+A: 1. Can make changes in a parent class without affecting the subclass (unlike inheritance) since it's a has-a relationship.
+2. It has flexibility
+
+Q4:What happens to the behaviours when the object composed of them is destroyed?
+A: Any behaviours called from the parent object that we referenced through composition in another class will be also destroyed as they cannot exist by themselves.
